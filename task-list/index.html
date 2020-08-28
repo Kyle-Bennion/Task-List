@@ -24,15 +24,15 @@
 
     <!-- MAIN SECTION -->
     <main class="container-fluid">
-        <div class="row" id="lists">
+        <div class="row" id="">
             <div class="col-12">
                 <form class="d-flex flex-direction-row col-4 form-group mt-3 "
                     onsubmit="app.listController.createList(event)">
                     <div>
                         <input type="text" class="form-control" id="title" placeholder="Add New List">
                     </div>
-                    <select class="form-control col-3">
-                        <option>Color:</option>
+                    <select id="color" class="form-control col-3">
+                        <option value="primary">Blue</option>
                     </select>
                     <div class="form-group col-3">
                         <button type="submit" class="btn btn-success">Add</button>
@@ -41,28 +41,10 @@
             </div>
         </div>
 
-
-        <!-- <div class="row" id="tasks">
-            <div class="card col-4">
-                <div class="card-header">
-                    ${this.list}
-                </div>
-                <div class="card-body">
-                    <li class="list-group-item"> <input type="checkbox" aria-label="Checkbox for following text input">
-                        Added Task </li>
-                    <li class="list-group-item"> <input type="checkbox" aria-label="Checkbox for following text input">
-                        Added Task </li>
-                    <li class="list-group-item"> <input type="checkbox" aria-label="Checkbox for following text input">
-                        Added Task </li>
-                    <li class="list-group-item"> <input type="checkbox" aria-label="Checkbox for following text input">
-                        Added Task </li>
-                    <li class="list-group-item"> <input type="checkbox" aria-label="Checkbox for following text input">
-                        Added Task </li>
-
-                </div>
+        <div class="container-fluid">
+            <div class="row" id="lists">
             </div>
-        </div> -->
-
+        </div>
 
 
 
