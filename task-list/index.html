@@ -17,7 +17,6 @@
         <h1> <i class="fa fa-list-alt" aria-hidden="true"></i> Forget-Me-Not <i class="fa fa-list-alt"
                 aria-hidden="true"></i> </h1>
         <h6>Task Manager</h6>
-
     </header>
 
 
@@ -25,6 +24,32 @@
 
     <!-- MAIN SECTION -->
     <main class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <form class="d-flex flex-direction-row col-4 form-group mt-3 "
+                    onsubmit="app.taskController.createTask(event)">
+                    <div>
+                        <input type="text" class="form-control" id="tasktitle" placeholder="Add New Task">
+                    </div>
+                    <select class="form-control col-3">
+                        <option>Color:</option>
+                    </select>
+                    <div class="form-group col-3">
+                        <button type="submit" class="btn btn-success">Add</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 " id="posts">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
 
 
     </main>
