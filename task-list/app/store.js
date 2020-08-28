@@ -1,9 +1,9 @@
-import Value from "./Models/Value.js";
+import Task from "./Models/Task.js";
 
 let _state = {
-  activeValue: new Value({ title: "Value" }),
-  /** @type {Value[]} */
-  values: []
+  activeValue: new Task({ title: "tasks" }),
+  /** @type {Task[]} */
+  tasks: []
 };
 
 class Store {
