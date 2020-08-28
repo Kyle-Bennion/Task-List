@@ -3,7 +3,7 @@ import Task from "./Models/List.js";
 let _state = {
   activeValue: new Task({ title: "tasks" }),
   /** @type {Task[]} */
-  tasks: []
+  tasks: [new Task({ title: "This is a Sample Title" })]
 };
 
 class Store {
