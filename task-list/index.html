@@ -27,9 +27,9 @@
         <div class="row">
             <div class="col-12">
                 <form class="d-flex flex-direction-row col-4 form-group mt-3 "
-                    onsubmit="app.taskController.createTask(event)">
+                    onsubmit="app.listController.createList(event)">
                     <div>
-                        <input type="text" class="form-control" id="tasktitle" placeholder="Add New Task">
+                        <input type="text" class="form-control" id="title" placeholder="Add New List">
                     </div>
                     <select class="form-control col-3">
                         <option>Color:</option>
@@ -39,11 +39,22 @@
                     </div>
                 </form>
             </div>
-            <div class="col-6 " id="posts">
-            </div>
         </div>
 
 
+        <div class="row">
+            <div class="card col-4">
+                <div class="card-header">
+                    Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
 
 
 

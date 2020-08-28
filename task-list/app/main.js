@@ -1,7 +1,7 @@
-import TaskController from "./Controllers/TaskController.js";
+import ListController from "./Controllers/ListController.js";
 
 class App {
-  valuesController = new TaskController();
+  listController = new ListController();
 }
 
 window["app"] = new App();

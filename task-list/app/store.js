@@ -1,4 +1,4 @@
-import Task from "./Models/Task.js";
+import Task from "./Models/List.js";
 
 let _state = {
   activeValue: new Task({ title: "tasks" }),
