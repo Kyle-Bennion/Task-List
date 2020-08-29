@@ -11,17 +11,12 @@ function _drawLists() {
 }
 
 
-
-
-
-
-
 //Public
 export default class ListController {
   constructor() {
 
     console.log("Controller Check");
-    _drawLists()
+    _drawLists();
   }
 
   // TODO 2: when this form gets submitted pass form data to service like we did on create post line 30 (dont forget to draw afterwords)
@@ -50,8 +45,10 @@ export default class ListController {
     _drawLists();
   }
 
+removeTask(id,task){
 
-
-
+ListService.removeTask(id,task)
+_drawLists()
+}
 
 }

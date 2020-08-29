@@ -29,10 +29,16 @@
                 <form class="d-flex flex-direction-row col-4 form-group mt-3 "
                     onsubmit="app.listController.createList(event)">
                     <div>
-                        <input type="text" class="form-control" id="title" placeholder="Add New List">
+                        <input type="text" class="form-control" id="listtitle" placeholder="Add New List">
                     </div>
                     <select id="color" class="form-control col-3">
+                        <option value="secondary">Grey</option>
                         <option value="primary">Blue</option>
+                        <option value="success">Green</option>
+                        <option value="warning">Yellow</option>
+                        <option value="danger">Red</option>
+                        <option value="info">Auqua</option>
+
                     </select>
                     <div class="form-group col-3">
                         <button type="submit" class="btn btn-success">Add</button>
