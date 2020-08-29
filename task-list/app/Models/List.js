@@ -24,7 +24,7 @@ export default class List {
     return /*html*/ ` 
     <div class="card col-4">
         <div class="card-header bg-${this.color}">
-            ${this.title}            <i class="fa fa-times-circle align-self-end" aria-hidden="true" onclick="app.listController.removeList('${this.id}')"></i>
+            ${this.title}            <i class="fa fa-times-circle align-self-end" aria-hidden="true" onclick="app.listController.removeList('${this.id}')")"></i>
         </div>
         <div class="card-body">
         <ul class="list-group">

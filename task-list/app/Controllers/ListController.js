@@ -5,6 +5,7 @@ import STORE from "../store.js";
 
 
 function _drawLists() {
+  STORE.saveState()
   let template = ''
   STORE.State.lists.forEach(l => template += l.Template)
   document.getElementById('lists').innerHTML = template
@@ -32,8 +33,10 @@ export default class ListController {
   // TODO 4: create the listDelete like removePost line 38 This will have to be added to the list template as well see line 17 of post template
 
   removeList(id) {
+    if(window.confirm("Want to Forget"))
     ListService.removeList(id)
     _drawLists();
+    
   }
 
   // TODO 6 create tasks to go on the lists similar to all the code for create/delete comments lines 24 & 31
@@ -48,7 +51,7 @@ export default class ListController {
   }
 
 removeTask(id,task){
-
+if(window.confirm("Done?"))
 ListService.removeTask(id,task)
 _drawLists()
 }
