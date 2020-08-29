@@ -2,8 +2,8 @@ import List from "../Models/List.js";
 import STORE from "../store.js";
 
 //Public
+console.log("Service Check");
 class ListService {
-  
   // TODO 3: createList method like create post line 8
   createList(newList) {
     let newContent = new List(newList)

@@ -8,6 +8,7 @@ function _drawLists() {
   let template = ''
   STORE.State.lists.forEach(l => template += l.Template)
   document.getElementById('lists').innerHTML = template
+
 }
 
 
@@ -23,7 +24,7 @@ export default class ListController {
   createList(event) {
     event.preventDefault()
     let form = event.target
-    let newList = { title: form.listtitle.value }
+    let newList = { title: form.listtitle.value, color: form.color.value }
     ListService.createList(newList)
     _drawLists();
   }
@@ -40,6 +41,7 @@ export default class ListController {
   addTask(event, id) {
     event.preventDefault()
     let form = event.target
+    console.log("Right Before This");
     let newTask = form.comment.value
     ListService.addTask(newTask, id)
     _drawLists();

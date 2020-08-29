@@ -2,7 +2,7 @@ import List from "./Models/List.js";
 
 let _state = {
   /** @type {List[]} */
-  lists: [new List({ title: "This is a Sample Title" })]
+  lists: [new List({ title: "This is a Sample Title", })]
 };
 
 class Store {
