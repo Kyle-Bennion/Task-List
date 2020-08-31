@@ -22,8 +22,8 @@ export default class List {
   get Template() {
     // FIXME Convert from comments to tasks and test no 7
     return /*html*/ ` 
-    <div class="card col-4">
-        <div class="card-header bg-${this.color}">
+    <div class="card shadow p-3 mb-5 bg-white rounded col-4">
+        <div class="card-header bg-${this.color} shadow p-3 mb-5 bg-${this.color} rounded">
             ${this.title}            <i class="fa fa-times-circle align-self-end" aria-hidden="true" onclick="app.listController.removeList('${this.id}')")"></i>
         </div>
         <div class="card-body">
